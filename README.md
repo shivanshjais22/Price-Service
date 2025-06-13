@@ -51,15 +51,16 @@ Registers a new price for a product.
   "basePrice": 999.99,
   "discountPercent": 10.0
 }
-2. Get Price by Product ID
-GET /price/{productId}
+
+###2. Get Price by Product ID
+**GET** /price/{productId}
 
 Returns the base price and discount percentage for a given product.
 
 Sample Response:
 
-json
-
+**Request Body**:
+```json
 {
   "productId": 1,
   "basePrice": 999.99,
