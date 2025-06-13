@@ -36,3 +36,18 @@ com.example.demo
 <br>│ └── PriceService.java
 <br>│ └── PriceServiceImpl.java
 <br>└── DemoApplication.java
+
+## 🔗 REST API Endpoints
+
+### 1. Create Price  
+**POST** `/price`
+
+Registers a new price for a product.
+
+**Request Body**:
+```json
+{
+  "productId": 1,
+  "basePrice": 999.99,
+  "discountPercent": 10.0
+}
