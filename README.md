@@ -21,3 +21,18 @@ The **Price Service** enables CRUD operations on product pricing and integrates 
 ---
 
 ## 📂 Project Structure
+
+
+com.example.demo
+├── controller
+│ └── Controllerprice.java
+├── dto
+│ └── Pricedto.java
+├── model
+│ └── Price.java
+├── repository
+│ └── PriceRepository.java
+├── service
+│ └── PriceService.java
+│ └── PriceServiceImpl.java
+└── DemoApplication.java
