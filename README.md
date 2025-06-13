@@ -24,15 +24,15 @@ The **Price Service** enables CRUD operations on product pricing and integrates 
 
 
 com.example.demo
-├── controller
-│ └── Controllerprice.java
-├── dto
-│ └── Pricedto.java
-├── model
-│ └── Price.java
-├── repository
-│ └── PriceRepository.java
-├── service
-│ └── PriceService.java
-│ └── PriceServiceImpl.java
-└── DemoApplication.java
+<br>├── controller
+<br>│ └── Controllerprice.java
+<br>├── dto
+<br>│ └── Pricedto.java
+<br>├── model
+<br>│ └── Price.java
+<br>├── repository
+<br>│ └── PriceRepository.java
+<br>├── service
+<br>│ └── PriceService.java
+<br>│ └── PriceServiceImpl.java
+<br>└── DemoApplication.java
