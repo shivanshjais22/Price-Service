@@ -59,25 +59,9 @@ Returns the base price and discount percentage for a given product.
 Sample Response:
 
 json
+
 {
   "productId": 1,
   "basePrice": 999.99,
   "discountPercent": 10.0
 }
-3. Get Discounted Price
-GET /price/discounted/{productId}
-
-Calculates and returns the final discounted price using the formula:
-
-ini
-Copy code
-discountedPrice = basePrice - (basePrice * discountPercent / 100)
-Sample Response:
-
-
-899.99
-⚙️ Integration with Product Service
-The Product Service fetches price info using RestTemplate or WebClient. Example usage:
-
-PriceDto priceDto = restTemplate.getForObject("http://localhost:9091/price/" + productId, PriceDto.class);
-
