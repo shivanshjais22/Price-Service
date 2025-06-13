@@ -51,3 +51,36 @@ Registers a new price for a product.
   "basePrice": 999.99,
   "discountPercent": 10.0
 }
+2. Get Price by Product ID
+GET /price/{productId}
+
+Returns the base price and discount percentage for a given product.
+
+Sample Response:
+
+json
+Copy code
+{
+  "productId": 1,
+  "basePrice": 999.99,
+  "discountPercent": 10.0
+}
+3. Get Discounted Price
+GET /price/discounted/{productId}
+
+Calculates and returns the final discounted price using the formula:
+
+ini
+Copy code
+discountedPrice = basePrice - (basePrice * discountPercent / 100)
+Sample Response:
+
+Copy code
+899.99
+⚙️ Integration with Product Service
+The Product Service fetches price info using RestTemplate or WebClient. Example usage:
+
+java
+Copy code
+PriceDto priceDto = restTemplate.getForObject("http://localhost:9091/price/" + productId, PriceDto.class);
+
